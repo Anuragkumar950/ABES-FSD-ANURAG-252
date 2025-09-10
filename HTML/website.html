@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Bookstore - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top frame */
+    #top-frame {
+      height: 80px;
+      background-color: #004080;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    #top-frame img {
+      height: 60px;
+    }
+
+    #nav a {
+      color: rgb(238, 236, 236);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #nav a:hover {
+      text-decoration: underline;
+    }
+
+   
+    #content {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+
+    #left-frame {
+      width: 20%;
+      background-color: #f2f2f2;
+      padding: 15px;
+      box-sizing: border-box;
+      border-right: 2px solid #ccc;
+    }
+
+    #left-frame a {
+      display: block;
+      margin: 10px 0;
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #left-frame a:hover {
+      text-decoration: underline;
+    }
+
+    #right-frame {
+      flex: 1;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Frame -->
+  <div id="top-frame">
+    <div>
+      <img src="https://images.unsplash.com/photo-1757285398769-31a5021afdcd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" alt="College Logo">
+      <span style="font-size:20px; font-weight:bold;">ABC College - Online Bookstore</span>
+    </div>
+    <div id="nav">
+      <a href="home.html" target="right-frame">Homepage</a>
+      <a href="login.html" target="right-frame">Login</a>
+      <a href="register.html" target="right-frame">Registration</a>
+      <a href="catalogue.html" target="right-frame">Catalogue</a>
+      <a href="cart.html" target="right-frame">Cart</a>
+    </div>
+  </div>
+
+  <!-- Content (Left + Right frames) -->
+  <div id="content">
+    <!-- Left Frame -->
+    <div id="left-frame">
+      <h3>Categories</h3>
+      <a href="cse.html" target="right-frame">CSE</a>
+      <a href="ece.html" target="right-frame">ECE</a>
+      <a href="mech.html" target="right-frame">MECH</a>
+      <a href="civil.html" target="right-frame">CIVIL</a>
+    </div>
+
+    <!-- Right Frame (iframe) -->
+    <iframe id="right-frame" name="right-frame" src=""></iframe>
+  </div>
+
+</body>
+</html>
